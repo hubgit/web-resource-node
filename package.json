@@ -27,5 +27,5 @@
   "bugs": "https://github.com/hubgit/web-resource-node/issues",
   "engines": {
     "node": ">=4"
-  },
+  }
 }
