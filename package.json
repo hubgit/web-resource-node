@@ -1,0 +1,21 @@
+{
+  "name": "web-resource",
+  "version": "0.1.0",
+  "description": "A simple interface for fetching web resources",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.0.0-rc.2",
+    "cheerio": "^0.20.0",
+    "node-fetch": "^1.4.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "Alf Eaton <eaton.alf@gmail.com>",
+  "license": "ISC"
+}
