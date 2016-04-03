@@ -1,21 +1,31 @@
 {
   "name": "web-resource",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple interface for fetching web resources",
-  "main": "index.js",
+  "main": "lib/resource.js",
   "dependencies": {
     "async": "^2.0.0-rc.2",
     "cheerio": "^0.20.0",
     "node-fetch": "^1.4.1"
   },
   "devDependencies": {
+    "standard": "^3.0.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^5.3.0",
     "mocha": "^2.4.5"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "standard && mocha test"
   },
   "author": "Alf Eaton <eaton.alf@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/hubgit/web-resource-node.git"
+  },
+  "homepage": "https://github.com/hubgit/web-resource-node",
+  "bugs": "https://github.com/hubgit/web-resource-node/issues",
+  "engines": {
+    "node": ">=4"
+  },
 }
