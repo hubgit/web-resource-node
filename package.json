@@ -1,6 +1,6 @@
 {
   "name": "web-resource",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A simple interface for fetching web resources",
   "main": "lib/resource.js",
   "dependencies": {
@@ -20,8 +20,8 @@
   "author": "Alf Eaton <eaton.alf@gmail.com>",
   "license": "ISC",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/hubgit/web-resource-node.git"
+    "type": "git",
+    "url": "https://github.com/hubgit/web-resource-node.git"
   },
   "homepage": "https://github.com/hubgit/web-resource-node",
   "bugs": "https://github.com/hubgit/web-resource-node/issues",
