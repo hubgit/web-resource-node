@@ -35,8 +35,8 @@ Resource('http://example.com/items/', {
 
 The first argument to `get` is the format, the second argument is the options.
 
-If `options.next` is set, the response data is passed to it; the next Resource to fetch should be returned.
-If `options.process` is set, the response data is passed to it instead of being returned when the Promise is resolved.
+If `options.next` is set, the response data is passed to `options.next`; the next Resource to fetch should be returned.
+If `options.next` and `options.process` are set, the response data is passed to `options.process` instead of being returned when the Promise is resolved.
 
 
 ```javascript
