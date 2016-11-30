@@ -1,6 +1,6 @@
 {
   "name": "web-resource",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "A simple interface for fetching web resources",
   "main": "lib/resource.js",
   "dependencies": {
