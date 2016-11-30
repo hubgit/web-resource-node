@@ -4,9 +4,8 @@
   "description": "A simple interface for fetching web resources",
   "main": "lib/resource.js",
   "dependencies": {
-    "async": "^2.0.0-rc.2",
-    "cheerio": "^0.20.0",
-    "node-fetch": "^1.4.1"
+    "async": "^2.1.4",
+    "node-fetch": "^1.6.3"
   },
   "devDependencies": {
     "standard": "^3.0.0",
