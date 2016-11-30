@@ -3,7 +3,9 @@ const hostQueues = require('../lib/queues.js')
 
 // build a list of urls
 
-var urls = Array.from([1, 2, 3, 4, 5], (i) => 'https://peerj.com/articles/' + i)
+var urls = Array.from([1, 2, 3, 4, 5], function (i) {
+  return 'https://peerj.com/articles/' + i
+})
 
 // fetch each resource
 
