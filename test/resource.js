@@ -1,10 +1,12 @@
 /* global describe, it */
 
-var chai = require('chai')
-chai.use(require('chai-as-promised'))
-var expect = chai.expect
+import chai from 'chai'
+import cap from 'chai-as-promised'
 
-var Resource = require('../lib/resource.js')
+import Resource from '../lib/resource.js'
+
+chai.use(cap)
+const expect = chai.expect
 
 describe('Resource', function () {
   it('should return a promise when get is called', function () {

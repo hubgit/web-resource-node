@@ -1,14 +1,12 @@
-const Resource = require('../lib/resource.js')
-const hostQueues = require('../lib/queues.js')
+import Resource from '../lib/resource.js'
+import hostQueues from '../lib/queues.js'
 
 // build a list of urls
-
-var urls = Array.from([1, 2, 3, 4, 5], function (i) {
-  return 'https://peerj.com/articles/' + i
+const urls = Array.from(Array(5), function (item, index) {
+  return 'https://peerj.com/articles/' + index
 })
 
 // fetch each resource
-
 urls.forEach(function (url) {
   Resource(url).get('json').then(function (data) {
     console.log(data)
@@ -22,7 +20,7 @@ function onError (e) {
 
 // logging
 
-var queue = hostQueues.queues['peerj.com']
+const queue = hostQueues.queues['peerj.com']
 
 queue.drain = function () {
   console.log('The queue has been drained!')
@@ -30,7 +28,7 @@ queue.drain = function () {
 
 function updateQueueDescriptions () {
   Object.keys(hostQueues.queues).forEach(function (key) {
-    var queue = hostQueues.queues[key]
+    const queue = hostQueues.queues[key]
     console.log(key + ': ' + queue.length() + ' items in the queue')
   })
 }
